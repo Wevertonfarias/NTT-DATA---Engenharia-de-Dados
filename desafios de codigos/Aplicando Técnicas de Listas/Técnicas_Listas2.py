@@ -1,6 +1,8 @@
 '''
 Descrição
-Você está gerando um relatório de vendas em Power BI e deseja identificar quais produtos foram mais vendidos durante um dia específico. Os dados dos produtos vendidos são frequentemente armazenados em listas. Sua tarefa é usar uma lista em Python para contar a frequência de cada produto e determinar o produto mais vendido, que será usado para destacar produtos populares no relatório do Power BI.
+Você está gerando um relatório de vendas em Power BI e deseja identificar quais produtos foram mais vendidos durante um dia específico.
+Os dados dos produtos vendidos são frequentemente armazenados em listas. 
+Sua tarefa é usar uma lista em Python para contar a frequência de cada produto e determinar o produto mais vendido, que será usado para destacar produtos populares no relatório do Power BI.
 
 Detalhamento:
 
@@ -27,16 +29,14 @@ A string com o nome do produto mais vendido. Se houver empate, retorne qualquer 
 Exemplos
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-Entrada	Saída
-Notebook, Mouse, Teclado, Mouse, Monitor, Mouse, Teclado	Mouse
-Impressora, Teclado, Monitor, Monitor, Teclado, Impressora, Impressora	Impressora
-Webcam, Webcam, Headset, Monitor, Headset, Headset	Headset
+Entrada	                                                                 Saída
+Notebook, Mouse, Teclado, Mouse, Monitor, Mouse,                        Mouse
+Impressora, Teclado, Monitor, Monitor, Teclado, Impressora,	            Impressora
+Webcam, Webcam, Headset, Monitor, Headset, Headset                  	Headset
 '''
 def produto_mais_vendido(produtos):
-    # Cria um dicionário para contar a frequência de cada produto
     contagem = {}
     
-    # Conta a ocorrência de cada produto na lista
     for produto in produtos:
         if produto in contagem:
             contagem[produto] += 1
@@ -46,7 +46,6 @@ def produto_mais_vendido(produtos):
     max_produto = None
     max_count = 0
     
-    # Encontra o produto com a maior contagem
     for produto, count in contagem.items():
         if count > max_count:
             max_count = count
@@ -55,13 +54,13 @@ def produto_mais_vendido(produtos):
     return max_produto
 
 def obter_entrada_produtos():
-    # Solicita a entrada do usuário em uma única linha
+    
     entrada = input()
-    # Converte a entrada em uma lista de strings, removendo espaços extras
+    
     produtos = [produto.strip() for produto in entrada.split(',')]
     return produtos
 
-# Obtém a lista de produtos a partir da entrada do usuário
+
 produtos = obter_entrada_produtos()
-# Exibe o produto mais vendido
+
 print(produto_mais_vendido(produtos))

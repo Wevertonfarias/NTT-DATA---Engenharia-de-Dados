@@ -23,11 +23,11 @@ Um único número inteiro representando o total de vendas e um número decimal r
 Exemplos
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-Entrada	Saída
-120, 150, 170, 130, 200, 250, 180, 220, 210, 160, 140, 190	2120, 176.67
-10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120	780, 65.00
-5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60	390, 32.50
-Atenção: É extremamente importante que as entradas e saídas sejam exatamente iguais às descritas na descrição do desafio de código.'''
+Entrada	                                                                  Saída
+120, 150, 170, 130, 200, 250, 180, 220, 210, 160, 140, 190	            2120, 176.67
+10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120	                    780, 65.00
+5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60	                        390, 32.50
+'''
 
 def obter_entrada_vendas():
     
