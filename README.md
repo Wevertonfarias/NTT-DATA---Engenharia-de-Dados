@@ -1,8 +1,7 @@
-<img align ="right" padding="20px" alt="Coragem" height="180" width="170" border-radios="30" src="https://hermes.dio.me/tracks/2a3a2d2b-7de7-457c-b4df-dcd327eae9eb.png">
-
-
 ## NTT DATA - Engenharia de Dados
 
+
+<img align ="right" padding="20px" alt="Coragem" height="180" width="170" border-radios="30" src="https://hermes.dio.me/tracks/2a3a2d2b-7de7-457c-b4df-dcd327eae9eb.png">
 
 ### Reposidorio do curso
 
