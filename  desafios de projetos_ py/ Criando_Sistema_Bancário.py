@@ -6,6 +6,7 @@ menu = """
 [4] Sair
 => """
 
+
 saldo = 0
 limite = 600
 extrato = ""
